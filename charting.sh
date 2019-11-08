@@ -24,6 +24,7 @@ for line in aln:
     aligned_seqs.append(line.rstrip("\n"))
 alignment_length = len(aligned_seqs[0])
 uniques_per_column = []
+#do a loop
 for column_number in range(alignment_length):
     column = []
     for seq in aligned_seqs:
